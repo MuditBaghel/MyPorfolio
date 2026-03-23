@@ -13,12 +13,7 @@ export const metadata = {
   title: "Portfolio of Mudit Baghel",
   description:
     "This is the portfolio of Mudit Baghel. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
-  icons: {
-    icon: "/favicon1.ico",
-    apple: "/apple-icon1.png",
-  },
-
-};
+  };
 
 export default function RootLayout({ children }) {
   return (
