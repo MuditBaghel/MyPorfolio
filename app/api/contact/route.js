@@ -1,7 +1,13 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+// import nodemailer from 'nodemailer';
+export const runtime = "nodejs";
 
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  return NextResponse.json({ message: "API working" });
+}
 // Create and configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: 'gmail',
