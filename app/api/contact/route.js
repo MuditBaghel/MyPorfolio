@@ -1,12 +1,7 @@
 import axios from 'axios';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-export const runtime = "nodejs";
 
-
-export async function GET() {
-  return NextResponse.json({ message: "API working" });
-}
 // Create and configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -15,7 +10,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_PASSKEY, 
   },
 });
-
 
 // Helper function to send a message via Telegram
 async function sendTelegramMessage(token, chat_id, message) {
