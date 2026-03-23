@@ -4,7 +4,10 @@ import ContactSection from "./components/homepage/contact";
 import Education from "./components/homepage/education";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
+import Certificates from "./components/homepage/certificates";    
 import Skills from "./components/homepage/skills";
+import { certificates } from "../utils/data/certificates-data";
+
 
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
@@ -29,6 +32,7 @@ export default async function Home() {
       <AboutSection />
       <Skills />
       <Projects />
+      <Certificates certificates={certificates}/>
       <Education />
       <ContactSection />
     </div>
