@@ -11,6 +11,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+export async function GET() {
+  return Response.json({ message: "API working" });
+}
 // Helper function to send a message via Telegram
 async function sendTelegramMessage(token, chat_id, message) {
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
