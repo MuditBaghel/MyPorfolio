@@ -10,7 +10,7 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Mudit Baghel - Software Developer",
+  title: "Portfolio of Mudit Baghel",
   description:
     "This is the portfolio of Mudit Baghel. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
 };
